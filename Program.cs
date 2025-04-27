@@ -3,6 +3,18 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Allow all for dev (TODO later, lock it down!)
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll",
+        builder =>
+        {
+            builder.AllowAnyOrigin()
+                   .AllowAnyHeader()
+                   .AllowAnyMethod();
+        });
+});
+
 // Add services to the container.
 builder.Services.AddControllers();
 builder.Services.AddDbContext<ECommerceDbContext>(options =>
@@ -11,6 +23,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+
+app.UseCors("AllowAll");
 
 // Seed data
 using (var scope = app.Services.CreateScope())

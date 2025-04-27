@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/kennykha/Dev/ECommerce/ECommerce.csproj": {}
+    "/Users/kennykha/Dev/ECommerce.API/ECommerce.csproj": {}
   },
   "projects": {
-    "/Users/kennykha/Dev/ECommerce/ECommerce.csproj": {
+    "/Users/kennykha/Dev/ECommerce.API/ECommerce.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/kennykha/Dev/ECommerce/ECommerce.csproj",
+        "projectUniqueName": "/Users/kennykha/Dev/ECommerce.API/ECommerce.csproj",
         "projectName": "ECommerce",
-        "projectPath": "/Users/kennykha/Dev/ECommerce/ECommerce.csproj",
+        "projectPath": "/Users/kennykha/Dev/ECommerce.API/ECommerce.csproj",
         "packagesPath": "/Users/kennykha/.nuget/packages/",
-        "outputPath": "/Users/kennykha/Dev/ECommerce/obj/",
+        "outputPath": "/Users/kennykha/Dev/ECommerce.API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/kennykha/.nuget/NuGet/NuGet.Config"
