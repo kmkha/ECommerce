@@ -3,9 +3,9 @@ using ECommerce.Models;
 
 namespace ECommerce.Data
 {
-    public class AppDbContext : DbContext
+    public class ECommerceDbContext : DbContext
     {
-        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
+        public ECommerceDbContext(DbContextOptions<ECommerceDbContext> options) : base(options)
         {
         }
 
