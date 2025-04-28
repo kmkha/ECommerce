@@ -17,10 +17,27 @@ public static class DbInitializer
 
         var products = new Product[]
         {
-            new Product { Name = "Kenny's Special", Price = 99.99M },
-            new Product { Name = "Hat", Price = 19.99M },
-            new Product { Name = "Shirt", Price = 29.99M },
-            new Product { Name = "Shoes", Price = 199.99M }
+            new Product
+            {
+                Name = "Wireless Mouse",
+                Description = "A smooth and precise wireless mouse.",
+                Price = 29.99M,
+                ImageUrl = "https://picsum.photos/300?random=1"
+            },
+            new Product
+            {
+                Name = "Mechanical Keyboard",
+                Description = "RGB backlit mechanical keyboard with blue switches.",
+                Price = 89.99M,
+                ImageUrl = "https://picsum.photos/300?random=2"
+            },
+            new Product
+            {
+                Name = "Noise-Cancelling Headphones",
+                Description = "Block out the world with high-quality ANC headphones.",
+                Price = 199.99M,
+                ImageUrl = "https://picsum.photos/300?random=3"
+            }
         };
 
         foreach (var p in products)
